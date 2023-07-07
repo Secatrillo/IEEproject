@@ -1,7 +1,6 @@
 {
   "name": "express-api2",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "start": "nodemon index.js"
@@ -16,5 +15,14 @@
     "nodemon": "^2.0.22",
     "request": "^2.88.2"
   },
-  "type": "module"
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Secatrillo/IEEproject.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Secatrillo/IEEproject/issues"
+  },
+  "homepage": "https://github.com/Secatrillo/IEEproject#readme",
+  "description": ""
 }
