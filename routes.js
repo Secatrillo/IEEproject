@@ -1,4 +1,4 @@
-import pool from './config.js';
+import pool from './data/config.js';
 const router = (app) => {
     app.get("/", (req, res) => {
         pool.query('SELECT * FROM users', (error, result) => {
