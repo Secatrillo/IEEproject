@@ -1,7 +1,7 @@
-import pool from './data/config.js';
+import pool from './config.js';
 const router = (app) => {
     app.get("/", (req, res) => {
-        pool.query('SELECT * FROM users', (error, result) => {
+        pool.query('SELECT * FROM Napravlenia', (error, result) => {
           if (error) res.send(error);
           else{
             var unPure = {};
@@ -16,7 +16,7 @@ const router = (app) => {
       });
       
       app.get('/about', (req, res) => {
-        pool.query('SELECT * FROM users', (error, result) => {
+        pool.query('SELECT * FROM Napravlenia', (error, result) => {
           if (error) res.send(error);
           else{
             var unPure = {};
