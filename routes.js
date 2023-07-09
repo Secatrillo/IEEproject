@@ -19,11 +19,11 @@ const router = (app) => {
         pool.query('SELECT * FROM ERZA', (error, result) => {
           if (error) res.send(error);
           else{
-            var unPure = {};
-            for (let i = 0; i < result.length; i++) {
-                unPure["row"+i] = ("row"+i ,result[i]);
+            //var unPure = {};
+            //for (let i = 0; i < result.length; i++) {
+            //    unPure["row"+i] = ("row"+i ,result[i]);
                 
-            }
+            //}
             //res.send(unPure)
             res.render("second page",{data: result});
           };
