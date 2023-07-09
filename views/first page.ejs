@@ -7,34 +7,17 @@
 <body>
     <link rel="stylesheet" href="style.css">
     <table style="width:100%">
-        <tr align="center">
-            <td>
-                <nav>
-                    <a href="first">Направление 1</a>
-                </nav>
-            </td>
-        </tr>
-        <tr align="center">
-            <td>
-                <nav>
-                    <a href="second">Направление 2</a>
-                </nav>
-            </td>
-        </tr>
-        <tr align="center">
-            <td>
-                <nav>
-                    <a href="third">Направление 3</a>
-                </nav>
-            </td>
-        </tr>
-        <tr>
-            <td align="center">
-                <nav>
-                    <a href="fourth">Направление 4</a>
-                </nav>
-            </td>
-        </tr>
+        <% for(var i=0; i<data.length; i++){ %>
+            <tr align="center">
+                <td>
+                    <nav>
+                        <a href=<%=data[i].link%>><%=data[i].Napravl%></a>
+                    </nav>
+                </td>
+            </tr>
+            <% } %>
+             
+        
     </table>
 </body>
 </html>
