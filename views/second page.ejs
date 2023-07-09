@@ -11,14 +11,44 @@
     <h1>2 страница!</h1>
 
 
-    <table> <% for(var i=0; i<data.length; i++){ %>
+    <table> <th>1 курс 1 семестр</th> <% for(var i=0; i<data.length; i++){ %>
         <% if (data[i].semestr == "1 семестр") { %>
             <tr>
-                <td><href= <%="/ERZA/"+data[i].link %> ><%= data[i].name %> </td>
+                <% if (data[i].examtype == "Экзамен") { %>
+                <td background-color=rgb(187,119,122)>
+                    <href= <%="/ERZA/"+data[i].link %> ><%= data[i].name %> 
+
+                </td> <% } %>
+                <% if (data[i].examtype != "Экзамен") { %>
+                    <td background-color=rgb(187,119,122)>
+                        <href= <%="/ERZA/"+data[i].link %> ><%= data[i].name %> 
+                        
+                    </td> <% } %>
             </tr>
           <% } %>
         <% } %>
+        <tr></tr>
+        <th>1 курс 2 семестр</th> <% for(var i=0; i<data.length; i++){ %>
+            <% if (data[i].semestr == "2 семестр") { %>
+                <tr>
+                    <% if (data[i].examtype == "Экзамен") { %>
+                    <td background-color=rgb(187,119,122)>
+                        <href= <%="/ERZA/"+data[i].link %> ><%= data[i].name %> 
+    
+                    </td> <% } %>
+                    <% if (data[i].examtype != "Экзамен") { %>
+                        <td background-color=rgb(187,119,122)>
+                            <href= <%="/ERZA/"+data[i].link %> ><%= data[i].name %> 
+                            
+                        </td> <% } %>
+                </tr>
+              <% } %>
+            <% } %>
+            <tr></tr>
+
     </table>        
+
+
 
     <!--<p>Привет! <% for(var i=0; i<data.length; i++){ %>
         <% if (data[i].examtype == "Экзамен") { %>
