@@ -24,7 +24,7 @@ const router = (app) => {
                 unPure["row"+i] = ("row"+i ,result[i]);
                 
             }
-            //res.send(unPure)
+            //res.send(result)
             res.render("second page",{data: result});
           };
         });
