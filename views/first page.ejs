@@ -2,14 +2,49 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <title>Главная страница</title>
+    <title>Выбор направления</title>
+    <style>
+        table, th, td {
+          border: 2px solid black;
+          border-collapse: collapse;
+        }
+        th, td {
+          padding: 15px;
+        }
+        </style>
 </head>
 <body>
     <link rel="stylesheet" href="style.css">
-    <h1>Добро пожаловать на наш сайт!</h1>
-    <p>Создано с использованием Node.js и Express.</p>
-    <p><%= Object.keys(row1).length %></p>
-    <p><%= row0.Napravl %></p>
+    <table style="width:100%">
+        <tr>
+            <td>
+                <nav>
+                    <a href="/">Направление 1</a>
+                </nav>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <nav>
+                    <a href="/">Направление 2</a>
+                </nav>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <nav>
+                    <a href="/">Направление 3</a>
+                </nav>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <nav>
+                    <a href="/">Направление 4</a>
+                </nav>
+            </td>
+        </tr>
+    </table>
     <nav>
         <a href="/">Главная</a>
         <a href="/about">О нас</a>
