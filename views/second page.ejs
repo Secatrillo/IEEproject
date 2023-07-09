@@ -7,15 +7,13 @@
 
 </head>
 <body">
-    <link rel="stylesheet" href="styleP2.css">
+    <link rel="stylesheet" href="style.css">
     <h1>2 страница!</h1>
     <p>Привет! <% for(var i=0; i<data.length; i++){ %>
         <% if (data[i].examtype == "Экзамен") { %>
             <a href= <%="/ERZA/"+data[i].link %> ><%= data[i].name %> </a>
           <% } %>
         <% } %></p>
-    <div class="square"></div>
-
     <nav>
         <a href="/">Главная</a>
         <a href="/about">О нас</a>
