@@ -9,13 +9,23 @@
 <body">
     <link rel="stylesheet" href="styleP2.css">
     <h1>2 страница!</h1>
-    <p>Привет! <% for(var i=0; i<data.length; i++){ %>
+
+
+    <table> <% for(var i=0; i<data.length; i++){ %>
+        <% if (data[i].semestr == "1 семестр") { %>
+            <tr>
+                <td><href= <%="/ERZA/"+data[i].link %> ><%= data[i].name %> </td>
+            </tr>
+          <% } %>
+        <% } %>
+    </table>        
+
+    <!--<p>Привет! <% for(var i=0; i<data.length; i++){ %>
         <% if (data[i].examtype == "Экзамен") { %>
             <a href= <%="/ERZA/"+data[i].link %> ><%= data[i].name %> </a>
           <% } %>
         <% } %></p>
-    <div class="square"></div>
-
+        -->
     <nav>
         <a href="/">Главная</a>
         <a href="/about">О нас</a>
