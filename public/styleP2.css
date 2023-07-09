@@ -2,11 +2,11 @@ td {
     text-align: center;
     font-style: normal;
 
-    background-color: (102, 119, 154);
+    background-color: rgb(102, 119, 154);
     border: 2px;
     border-color: black;
 }
 
 td:hover{
-    background-color: (140, 35, 35);
+    background-color: rgb(80, 100, 130);
 }
