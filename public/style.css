@@ -2,3 +2,44 @@ body {
     background-color: #ffffff;
     color: #dddddd;
 }
+body,html {
+    margin: 0;
+    font-family: sans-serif;
+  }
+  
+  ul {
+    padding: 0;
+    width: 100%;
+  }
+  
+  li {
+    display: inline;
+  }
+  
+  a {
+    outline: none;
+    text-decoration: none;
+    display: inline-block;
+    width: 59.5%;
+    margin-right: 0%;
+    text-align: center;
+    line-height: 3;
+    color: rgb(255, 255, 255);
+  }
+  
+  li:last-child a {
+    margin-right: 0;
+  }
+  
+  a:link, a:visited, a:focus {
+    background: rgb(65, 39, 214);
+  }
+  
+  a:hover {
+    background: rgb(65, 39, 214)e;
+  }
+  
+  a:active {
+    background: red;
+    color: white;
+  }
