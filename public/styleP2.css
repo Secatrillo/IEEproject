@@ -1,0 +1,12 @@
+td {
+    text-align: center;
+    font-style: normal;
+    
+    background-color: brown;
+    border: 2px;
+    border-color: black;
+}
+
+td:hover{
+    background-color: (140, 35, 35);
+}
