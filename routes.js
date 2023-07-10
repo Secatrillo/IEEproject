@@ -28,6 +28,7 @@ const router = (app) => {
           };
         });
       });
+
       app.get('/erza', (req, res) => {
         pool.query('SELECT * FROM ERZA', (error, result) => {
           if (error) res.send(error);
@@ -88,5 +89,5 @@ const router = (app) => {
       
 
       
-});
+};
 export default router;
