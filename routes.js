@@ -52,7 +52,7 @@ const router = (app) => {
         });
       });
 
-      app.get("/electroener.../:link", (req, res) => {
+      app.get("/electroenergyetalon/:link", (req, res) => {
         const link = req.params.link;
         pool.query('SELECT * FROM Predmet WHERE link = ?', link,(error, result) => {
           if (error) res.send(error);
