@@ -23,7 +23,7 @@ const router = (app) => {
           if (error) res.send(error);
           else{
             
-            //res.send(result)
+            //res.send(result[0].Predmet)
             res.render("fird page",{data: result[0]});
           };
         });
