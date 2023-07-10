@@ -3,6 +3,7 @@ body {
     color: #dddddd;
 }
 body,table {
+    width: 100%;
     margin: 0;
     font-family: sans-serif;
   }
@@ -20,7 +21,7 @@ body,table {
     outline: none;
     text-decoration: none;
     display: inline-block;
-    width: 59.5%;
+    width: 60%;
     margin-right: 0%;
     text-align: center;
     line-height: 3;
