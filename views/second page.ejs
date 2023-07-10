@@ -17,7 +17,7 @@
         <% if (data[i].semestr == "1 семестр") { %>
             <% if (data[i].examtype == "Экзамен") { %>
                 <tr>
-                <td class="exam" href= <%="/ERZA/"+data[i].link %> >
+                <td class="exam" href= "/ERZA/"<%= data[i].link %> >
                 <%= data[i].name %> </td> 
                 </tr> <% } %>
         <% } %>
