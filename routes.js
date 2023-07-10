@@ -14,6 +14,19 @@ const router = (app) => {
           };
         });
       });
+
+
+      app.get("/hhhh/:link", (req, res) => {
+        const link = request.params.link;
+        pool.query('SELECT * FROM Predmet WHERE link = ?', link,(error, result) => {
+          if (error) res.send(error);
+          else{
+            
+            res.send(result)
+            //res.render("fird page",{data: result});
+          };
+        });
+      });
       
       app.get('/about', (req, res) => {
         pool.query('SELECT * FROM Napravlenia', (error, result) => {
