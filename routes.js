@@ -24,7 +24,7 @@ const router = (app) => {
           else{
             
             //res.send(result[0].Predmet)
-            res.render("fird page",{data: result[0]});
+            res.render("fird page",{data: result[0],link: "/erza"});
           };
         });
       });
@@ -58,7 +58,7 @@ const router = (app) => {
           else{
             
             //res.send(result)
-            res.render("fird page",{data: result[0]});
+            res.render("fird page",{data: result[0], link: "/respseti"});
           };
         });
       });
@@ -70,7 +70,7 @@ const router = (app) => {
           else{
             
             //res.send(result)
-            res.render("fird page",{data: result[0]});
+            res.render("fird page",{data: result[0],link: "/electroenergy"});
           };
         });
       });
@@ -82,7 +82,7 @@ const router = (app) => {
           else{
             
             //res.send(result)
-            res.render("fird page",{data: result[0]});
+            res.render("fird page",{data: result[0], link: "/electroenergyetalon"});
           };
         });
       });
