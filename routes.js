@@ -16,9 +16,25 @@ const router = (app) => {
       });
 
 
+
       app.get("/erza/:link", (req, res) => {
         const link = req.params.link;
         pool.query('SELECT * FROM Predmet WHERE link = ?', link,(error, result) => {
+
+      
+      app.get('/erza', (req, res) => {
+        pool.query('SELECT * FROM ERZA', (error, result) => {
+          if (error) res.send(error);
+          else{
+    
+            res.render("second page",{data: result});
+          };
+        });
+      });
+
+      app.get('/raspseti', (req, res) => {
+        pool.query('SELECT * FROM Napravlenia', (error, result) => {
+
           if (error) res.send(error);
           else{
             
