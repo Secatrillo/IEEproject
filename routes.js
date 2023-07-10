@@ -17,7 +17,7 @@ const router = (app) => {
 
 
       app.get("/hhhh/:link", (req, res) => {
-        const link = request.params.link;
+        const link = req.params.link;
         pool.query('SELECT * FROM Predmet WHERE link = ?', link,(error, result) => {
           if (error) res.send(error);
           else{
