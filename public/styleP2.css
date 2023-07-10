@@ -1,12 +1,38 @@
+table {
+    padding: 2px;
+    float:left;
+}
+th {
+    text-align: center;
+    border: black 3px;
+    margin: 3px;
+    padding: 5px;
+    padding-left: 8px;
+    padding-right: 8px;
+    background-color: whitesmoke;
+    font-size: 30px;
+}
 td {
     text-align: center;
-    font-style: normal;
-
-    background-color: rgb(102, 119, 154);
-    border: 2px;
-    border-color: black;
+    border: black 3px;
+    margin: 3px;
+    padding: 5px;
+    padding-left: 8px;
+    padding-right: 8px;
+    background-color: whitesmoke;
+    font-size: 14px;
+    font-family: 'Corbel', 'Corbel', Corbel, sans-serif;
 }
 
-td:hover{
-    background-color: rgb(80, 100, 130);
+td.zach {
+    background-color: rgb(102, 119, 154);
+}
+td.zach:hover{
+    background-color: rgb(133, 147, 172);
+}
+td.exam {
+    background-color: rgb(187, 119, 122);
+}
+td.exam:hover {
+    background-color: rgb(201, 142, 148);
 }
