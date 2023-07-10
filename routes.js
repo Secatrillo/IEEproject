@@ -22,8 +22,8 @@ const router = (app) => {
           if (error) res.send(error);
           else{
             
-            //res.send(result)
-            res.render("fird page",{data: result});
+            res.send(result)
+            //res.render("fird page",{data: result});
           };
         });
       });
@@ -34,8 +34,8 @@ const router = (app) => {
           if (error) res.send(error);
           else{
             
-            //res.send(result)
-            res.render("fird page",{data: result});
+            res.send(result)
+            //res.render("fird page",{data: result});
           };
         });
       });
@@ -46,8 +46,8 @@ const router = (app) => {
           if (error) res.send(error);
           else{
             
-            //res.send(result)
-            res.render("fird page",{data: result});
+            res.send(result)
+            //res.render("fird page",{data: result});
           };
         });
       });
@@ -58,8 +58,8 @@ const router = (app) => {
           if (error) res.send(error);
           else{
             
-            //res.send(result)
-            res.render("fird page",{data: result});
+            res.send(result)
+            //res.render("fird page",{data: result});
           };
         });
       });
