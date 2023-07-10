@@ -20,7 +20,13 @@ const router = (app) => {
       app.get("/erza/:link", (req, res) => {
         const link = req.params.link;
         pool.query('SELECT * FROM Predmet WHERE link = ?', link,(error, result) => {
-
+          if (error) res.send(error);
+          else{
+    
+            res.render("fird page",{data: result[0]});
+          };
+        });
+      });
       
       app.get('/erza', (req, res) => {
         pool.query('SELECT * FROM ERZA', (error, result) => {
