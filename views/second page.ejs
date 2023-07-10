@@ -18,9 +18,9 @@
             <% if (data[i].examtype == "Экзамен") { %>
                 <tr>
                     <td class="exam" >
-                          <a href= <%= "/erza/"+data[i].link %>>
-                         <%= data[i].name %> 
-                         </a>
+                        <a href= <%= "/"+ link + "/" +data[i].link %>>
+                        <%= data[i].name %> 
+                        </a>
                     </td>
                 </tr> <% } %>
         <% } %>
