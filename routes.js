@@ -16,7 +16,43 @@ const router = (app) => {
       });
 
 
-      app.get("/ERZA/:link", (req, res) => {
+      app.get("/erza/:link", (req, res) => {
+        const link = req.params.link;
+        pool.query('SELECT * FROM Predmet WHERE link = ?', link,(error, result) => {
+          if (error) res.send(error);
+          else{
+            
+            //res.send(result)
+            res.render("fird page",{data: result});
+          };
+        });
+      });
+
+      app.get("/respseti/:link", (req, res) => {
+        const link = req.params.link;
+        pool.query('SELECT * FROM Predmet WHERE link = ?', link,(error, result) => {
+          if (error) res.send(error);
+          else{
+            
+            //res.send(result)
+            res.render("fird page",{data: result});
+          };
+        });
+      });
+
+      app.get("/electroenergy/:link", (req, res) => {
+        const link = req.params.link;
+        pool.query('SELECT * FROM Predmet WHERE link = ?', link,(error, result) => {
+          if (error) res.send(error);
+          else{
+            
+            //res.send(result)
+            res.render("fird page",{data: result});
+          };
+        });
+      });
+
+      app.get("/electroener.../:link", (req, res) => {
         const link = req.params.link;
         pool.query('SELECT * FROM Predmet WHERE link = ?', link,(error, result) => {
           if (error) res.send(error);
