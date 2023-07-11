@@ -22,7 +22,7 @@ table {
     display: inline;
   }
   
-  a {
+  a.exam,a.zach,a.nap {
     position: relative;
     outline: none;
     text-decoration: none;
@@ -34,22 +34,10 @@ table {
     color: rgb(255, 255, 255);
   }
   
-  li:last-child a {
-    margin-right: 0;
-  }
+
   
-  a:link, a:visited, a:focus {
-    background: rgb(65, 39, 214);
-  }
-  
-  a:hover {
-    background: rgb(65, 39, 214)e;
-  }
-  
-  a:active {
-    background: red;
-    color: white;
-  }
+ 
+
 
   .box{
     position: fixed;
@@ -64,10 +52,10 @@ table {
     z-index: 3;
     width: 100%;
   }
-a.zach {
+a.zach,a.nap {
     background-color: rgb(102, 119, 154);
 }
-a.zach:hover{
+a.zach:hover,a.nap:hover{
     background-color: rgb(133, 147, 172);
 }
 a.exam {
@@ -81,8 +69,14 @@ th{
     font-size: 30px;
     color:rgb(221, 9, 9)
 }
-.navshit{
- width: 5%;
- height: 5px;
- top: -120px
+.dom{
+width:fit-content;
+margin: 0;
+height: 20px;
+color: rgb(221, 9, 9);
+font-size: 18px;
+position: relative;
+float: left;
+overflow: hidden;
 }
+

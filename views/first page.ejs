@@ -8,7 +8,11 @@
 </head>
 <body>
     <div class="logo" style="height: 100px; position: fixed; top: 0px; left: 0px; border: 1px solid black; background:red;"></div>
-    <div class="links" style="height: 20px; position: fixed; top: 100px; left: 0px; border: 1px solid black; background:rgb(57, 49, 49);"></div>
+    <div class="links" style="height: 20px; position: fixed; top: 100px; left: 0px; border: 1px solid black; background:rgb(57, 49, 49);">
+        <nav>
+            <a class='dom' href= "/"> Направления  </a>
+        </nav>
+    </div>
     <div class="box"></div>
     <link rel="stylesheet" href="style.css">
     <table >
@@ -16,7 +20,7 @@
             <tr align="center">
                 <td>
                     <nav>
-                        <a href=<%=data[i].link%>><%=data[i].Napravl%></a>
+                        <a class="nap" href=<%=data[i].link%>><%=data[i].Napravl%></a>
                     </nav>
                 </td>
             </tr>
