@@ -1,24 +1,28 @@
 <!DOCTYPE html>
 <head>
     <meta charset="UTF-8">
-    <title>Главная страница</title>
-
-    
-
+    <title>Дисциплина</title>
 </head>
+
 <body">
-    <link rel="stylesheet" href="style.css">
-    <h1>3 страница!</h1>
-    <p>Дисциплина: <%= data.Predmet %> </p>
-    <p>Задача курса: <%= data.goal %> </p>
-    <p>Необходимые знания студента для освоения дисциплины: <%= data.requarements %> </p>
-    <p>Отзывы студентов о дисциплине: <%= data.result %> </p>
-    <p>Кафедра дисциплины: <%= data.cafedra %> </p>
-    <p>Тут должна быть ссылка на кафедру</p>
-   
+    <div style="background-color:rgb(187, 119, 122);color:rgb(0, 0, 0);padding:20px;">
+        <h1 style="text-align:center;">Дисциплина: <%= data.Predmet %></h1>  
+      </div> 
+    <div style="background-color:rgb(102, 119, 154);color:rgb(0, 0, 0);padding:20px;">
+        <h2 style="text-align:center;"></pstyle>Задача курса:</h2> 
+        <p style="text-align:center;"></pstyle><%= data.goal %></p>   
+        <h2 style="text-align:center;"></pstyle>Необходимые знания студента для освоения дисциплины:</h2>
+        <p style="text-align:center;"></pstyle><%= data.requarements %></p>
+        <h2 style="text-align:center;"></pstyle>Отзывы студентов о дисциплине:</h2>
+        <p style="text-align:center;"></pstyle><%= data.result %></p>
+        <h2 style="text-align:center;"></pstyle>Кафедра дисциплины:</h2>
+        <a href="data.cabinet"><p style="text-align:center;"></pstyle><%= data.cafedra %></p></a>
+      </div>   
+    
     <nav>
-        <a href="/">Главная</a>
-        <a href="/erza">О нас</a>
+        <a href="/">Направления</a>
+        <a href= <%=link %>    >Назад</a>
+
     </nav>
 </body>
 </html>

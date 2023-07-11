@@ -14,7 +14,7 @@ const router = (app) => {
           };
         });
       });
-      
+
       app.get('/erza', (req, res) => {
         pool.query('SELECT * FROM ERZA', (error, result) => {
           if (error) res.send(error);
@@ -61,13 +61,14 @@ const router = (app) => {
         });
       });
 
-      app.get("/erza/:link", (req, res) => {
+       app.get("/erza/:link", (req, res) => {
         const link = req.params.link;
         pool.query('SELECT * FROM Predmet WHERE link = ?', link,(error, result) => {
           if (error) res.send(error);
           else{
-    
-            res.render("fird page",{data: result[0]});
+            
+            //res.send(result[0].Predmet)
+            res.render("fird page",{data: result[0],link: "/erza"});
           };
         });
       });
@@ -79,7 +80,7 @@ const router = (app) => {
           else{
             
             //res.send(result)
-            res.render("fird page",{data: result[0]});
+            res.render("fird page",{data: result[0], link: "/respseti"});
           };
         });
       });
@@ -91,7 +92,7 @@ const router = (app) => {
           else{
             
             //res.send(result)
-            res.render("fird page",{data: result[0]});
+            res.render("fird page",{data: result[0],link: "/electroenergy"});
           };
         });
       });
@@ -103,7 +104,7 @@ const router = (app) => {
           else{
             
             //res.send(result)
-            res.render("fird page",{data: result[0]});
+            res.render("fird page",{data: result[0], link: "/electroenergyetalon"});
           };
         });
       });
