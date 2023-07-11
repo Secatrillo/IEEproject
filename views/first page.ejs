@@ -2,20 +2,25 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <title>Люблю Кирича!</title>
+
+    <title>Выбор направления</title>
+
 </head>
 <body>
+    <div style="width: 100%; height: 100px; position: fixed; top: 0px; left: 0px; border: 1px solid black; background:red;"></div>
     <link rel="stylesheet" href="style.css">
-    <h1>Добро пожаловать на наш сайт!</h1>
-    <p>Создано с использованием Node.js и Express.</p>
-    <p><%= Object.keys(row1).length %></p>
-    <p><%= row0.Napravl %></p>
-    <nav>
-        <a href="/">Главная</a>
 
-        <a href="/erza">О нас</a>
-    
+    <table style="margin-top: 100px;">
+        <% for(var i=0; i<data.length; i++){ %>
+            <tr align="center">
+                <td>
+                    <nav>
+                        <a href=<%=data[i].link%>><%=data[i].Napravl%></a>
+                    </nav>
+                </td>
+            </tr>
+            <% } %>
+    </table>
 
-    </nav>
 </body>
 </html>
