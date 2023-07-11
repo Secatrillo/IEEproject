@@ -15,9 +15,53 @@ const router = (app) => {
         });
       });
 
+      app.get('/erza', (req, res) => {
+        pool.query('SELECT * FROM ERZA', (error, result) => {
+          if (error) res.send(error);
+          else{
+    
+            res.render("second page",{data: result, link:"erza"});
+          };
+        });
+      });
 
+      app.get('/raspseti', (req, res) => {
+        pool.query('SELECT * FROM RASPSETI', (error, result) => {
 
-      app.get("/erza/:link", (req, res) => {
+          if (error) res.send(error);
+          else{
+            
+            //res.send(result)
+            res.render("second page",{data: result, link:"raspseti"});
+          };
+        });
+      });
+
+      app.get('/electroenergy', (req, res) => {
+        pool.query('SELECT * FROM ELECTROENERGY', (error, result) => {
+
+          if (error) res.send(error);
+          else{
+            
+            //res.send(result)
+            res.render("second page",{data: result, link:"electroenergy"});
+          };
+        });
+      });
+
+      app.get('/electroenergyetalon', (req, res) => {
+        pool.query('SELECT * FROM ELECTROENERGYETALON', (error, result) => {
+
+          if (error) res.send(error);
+          else{
+            
+            //res.send(result)
+            res.render("second page",{data: result, link:"electroenergyetalon"});
+          };
+        });
+      });
+
+       app.get("/erza/:link", (req, res) => {
         const link = req.params.link;
         pool.query('SELECT * FROM Predmet WHERE link = ?', link,(error, result) => {
           if (error) res.send(error);
@@ -25,28 +69,6 @@ const router = (app) => {
             
             //res.send(result[0].Predmet)
             res.render("fird page",{data: result[0],link: "/erza"});
-          };
-        });
-      });
-
-      app.get('/erza', (req, res) => {
-        pool.query('SELECT * FROM ERZA', (error, result) => {
-          if (error) res.send(error);
-          else{
-    
-            res.render("second page",{data: result});
-          };
-        });
-      });
-
-      app.get('/raspseti', (req, res) => {
-        pool.query('SELECT * FROM Napravlenia', (error, result) => {
-
-          if (error) res.send(error);
-          else{
-            
-            //res.send(result)
-            res.render("fird page",{data: result[0]});
           };
         });
       });
