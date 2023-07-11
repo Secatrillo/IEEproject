@@ -14,8 +14,8 @@ const router = (app) => {
         pool.query('SELECT * FROM ERZA', (error, result) => {
           if (error) res.send(error);
           else{
-    
-            res.render("second page",{data: result, link:"erza", name: 'Эксплуатация релейной защиты, автоматики и электрооборудования электростанций'});
+            //res.send(result)
+            res.render("second page",{data: result, link:"/erza", name: 'Эксплуатация релейной защиты, автоматики и электрооборудования электростанций'});
           };
         });
       });
@@ -27,7 +27,7 @@ const router = (app) => {
           else{
             
             //res.send(result)
-            res.render("second page",{data: result, link:"raspseti", name: 'Распределительные электрические сети'});
+            res.render("second page",{data: result, link:"/raspseti", name: 'Распределительные электрические сети'});
           };
         });
       });
@@ -39,7 +39,7 @@ const router = (app) => {
           else{
             
             //res.send(result)
-            res.render("second page",{data: result, link:"electroenergy", name: 'Электроэнергетика'});
+            res.render("second page",{data: result, link:"/electroenergy", name: 'Электроэнергетика'});
           };
         });
       });
@@ -51,7 +51,7 @@ const router = (app) => {
           else{
             
             //res.send(result)
-            res.render("second page",{data: result, link:"electroenergyetalon", name: 'Электроэнергетика и электротехника (Эталон)'});
+            res.render("second page",{data: result, link:"/electroenergyetalon", name: 'Электроэнергетика и электротехника (Эталон)'});
           };
         });
       });

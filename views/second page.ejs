@@ -11,7 +11,7 @@
     <div class="links">
         <nav>
             <a class="links"; href= "/"> Направления </a>
-            <a class="links" ; href= <%= "/"+ link + "/" +data[i].link %> <%=name%> </a>
+            <a class="links" ; href= <%=  link %> <%=name%> </a>
         </nav>
     </div>
     <div class="box"></div>
@@ -24,7 +24,7 @@
             <% if (data[i].examtype == "Экзамен") { %>
                 <tr align="center">
                     <td  >
-                        <a class="exam" href= <%= "/"+ link + "/" +data[i].link %>>
+                        <a class="exam" href= <%= link + "/" +data[i].link %>>
                         <%= data[i].name %> 
                         </a>
                     </td>
@@ -36,7 +36,7 @@
            <% if (data[i].examtype != "Экзамен") { %>
                 <tr align="center">
                     <td > 
-                        <a class="zach" href= <%= "/"+ link + "/" +data[i].link %>>
+                        <a class="zach" href= <%=  link + "/" +data[i].link %>>
                         <%= data[i].name %> 
                         </a> 
                     </td>
@@ -52,7 +52,7 @@
             <% if (data[i].examtype == "Экзамен") { %>
                 <tr align="center">
                     <td  >
-                        <a class="exam" href= <%= "/"+ link + "/" +data[i].link %>>
+                        <a class="exam" href= <%= link + "/" +data[i].link %>>
                         <%= data[i].name %> 
                         </a>
                     </td>
@@ -64,7 +64,7 @@
            <% if (data[i].examtype != "Экзамен") { %>
                 <tr align="center">
                     <td > 
-                        <a class="zach" href= <%= "/"+ link + "/" +data[i].link %>>
+                        <a class="zach" href= <%= link + "/" +data[i].link %>>
                         <%= data[i].name %> 
                         </a> 
                     </td>
@@ -81,7 +81,7 @@
             <% if (data[i].examtype == "Экзамен") { %>
                 <tr align="center">
                     <td>
-                        <a class="exam" href= <%= "/"+ link + "/" +data[i].link %>>
+                        <a class="exam" href= <%=  link + "/" +data[i].link %>>
                         <%= data[i].name %> 
                         </a>
                     </td>
@@ -93,7 +93,7 @@
            <% if (data[i].examtype != "Экзамен") { %>
                 <tr align="center">
                     <td > 
-                        <a class="zach" href= <%= "/"+ link + "/" +data[i].link %>>
+                        <a class="zach" href= <%=  link + "/" +data[i].link %>>
                         <%= data[i].name %> 
                         </a> 
                     </td>
@@ -109,7 +109,7 @@
             <% if (data[i].examtype == "Экзамен") { %>
                 <tr align="center">
                     <td  >
-                        <a class="exam" href= <%= "/"+ link + "/" +data[i].link %>>
+                        <a class="exam" href= <%=  link + "/" +data[i].link %>>
                         <%= data[i].name %> 
                         </a>
                     </td>
@@ -121,7 +121,7 @@
            <% if (data[i].examtype != "Экзамен") { %>
                 <tr align="center">
                 <td > 
-                    <a  class="zach" href= <%= "/"+ link + "/" +data[i].link %>>
+                    <a  class="zach" href= <%=  link + "/" +data[i].link %>>
                         <%= data[i].name %> 
                         </a> </td>
                 </tr> <% } %>
@@ -137,7 +137,7 @@
             <% if (data[i].examtype == "Экзамен") { %>
                 <tr align="center">
                     <td  >
-                        <a class="exam" href= <%= "/"+ link + "/" +data[i].link %>>
+                        <a class="exam" href= <%=  link + "/" +data[i].link %>>
                         <%= data[i].name %> 
                         </a>
                     </td>
@@ -149,7 +149,7 @@
            <% if (data[i].examtype != "Экзамен") { %>
                 <tr align="center">
                 <td > 
-                    <a class="zach" href= <%= "/"+ link + "/" +data[i].link %>>
+                    <a class="zach" href= <%=  link + "/" +data[i].link %>>
                         <%= data[i].name %> 
                         </a> </td>
                 </tr> <% } %>
@@ -164,7 +164,7 @@
             <% if (data[i].examtype == "Экзамен") { %>
                 <tr align="center">
                     <td  >
-                        <a class="exam" href= <%= "/"+ link + "/" +data[i].link %>>
+                        <a class="exam" href= <%=  link + "/" +data[i].link %>>
                         <%= data[i].name %> 
                         </a>
                     </td>
@@ -176,7 +176,7 @@
            <% if (data[i].examtype != "Экзамен") { %>
                 <tr align="center">
                 <td > 
-                    <a  class="zach" href= <%= "/"+ link + "/" +data[i].link %>>
+                    <a  class="zach" href= <%=  link + "/" +data[i].link %>>
                         <%= data[i].name %> 
                         </a> </td>
                 </tr> <% } %>
@@ -192,7 +192,7 @@
             <% if (data[i].examtype == "Экзамен") { %>
                 <tr align="center">
                     <td  >
-                        <a class="exam" href= <%= "/"+ link + "/" +data[i].link %>>
+                        <a class="exam" href= <%=  link + "/" +data[i].link %>>
                         <%= data[i].name %> 
                         </a>
                     </td>
@@ -204,7 +204,7 @@
            <% if (data[i].examtype != "Экзамен") { %>
                 <tr align="center">
                 <td > 
-                    <a class="zach" href= <%= "/"+ link + "/" +data[i].link %>>
+                    <a class="zach" href= <%=  link + "/" +data[i].link %>>
                         <%= data[i].name %> 
                         </a> </td>
                 </tr> <% } %>
@@ -219,7 +219,7 @@
             <% if (data[i].examtype == "Экзамен") { %>
                 <tr align="center">
                     <td  >
-                        <a class="exam" href= <%= "/"+ link + "/" +data[i].link %>>
+                        <a class="exam" href= <%=  link + "/" +data[i].link %>>
                         <%= data[i].name %> 
                         </a>
                     </td>
@@ -231,7 +231,7 @@
            <% if (data[i].examtype != "Экзамен") { %>
                 <tr align="center">
                 <td > 
-                    <a class="zach" href= <%= "/"+ link + "/" +data[i].link %>>
+                    <a class="zach" href= <%=  link + "/" +data[i].link %>>
                         <%= data[i].name %> 
                         </a> </td>
                 </tr> <% } %>
