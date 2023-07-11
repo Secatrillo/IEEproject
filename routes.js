@@ -75,7 +75,7 @@ const router = (app) => {
           else{
             
             //res.send(result)
-            res.render("fird page",{data: result[0], link: "/respseti"});
+            res.render("fird page",{data: result[0], link: "/raspseti"});
           };
         });
       });
