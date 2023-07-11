@@ -4,12 +4,12 @@ body {
 }
 
 table {
+    position: relative;
     width:100%;
     margin: 0;
     font-family: sans-serif;
     margin-top: 130px;
-    background: #0f992a; 
-    
+    z-index: 2;
   }
   
   ul {
@@ -22,6 +22,7 @@ table {
   }
   
   a {
+    position: relative;
     outline: none;
     text-decoration: none;
     display: inline-block;
@@ -48,7 +49,17 @@ table {
     background: red;
     color: white;
   }
-  
-#rec{
-    z-index: 1;    
-}
+
+  .box{
+    position: absolute;
+    z-index: 1;
+    width: 70%;
+    height: 100%;
+    left: 15%;
+    background:rgb(64, 175, 249);
+    top: 0px;
+  }
+  .logo,.links{
+    z-index: 3;
+    width: 100%;
+  }
