@@ -9,6 +9,7 @@ table {
     font-family: sans-serif;
     margin-top: 130px;
     background: #0f992a; 
+    
   }
   
   ul {
@@ -47,8 +48,7 @@ table {
     background: red;
     color: white;
   }
-  #️rectangle {
-    width: 220px;
-    height: 120px;
-    background: #4da1f7;
+  
+#rec{
+    z-index: 1;    
 }
