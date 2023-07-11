@@ -51,7 +51,7 @@ table {
   }
 
   .box{
-    position: absolute;
+    position: fixed;
     z-index: 1;
     width: 70%;
     height: 100%;
