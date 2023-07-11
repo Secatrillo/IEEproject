@@ -15,7 +15,7 @@ const router = (app) => {
           if (error) res.send(error);
           else{
     
-            res.render("second page",{data: result, link:"erza"});
+            res.render("second page",{data: result, link:"erza", name: 'Эксплуатация релейной защиты, автоматики и электрооборудования электростанций'});
           };
         });
       });
@@ -27,7 +27,7 @@ const router = (app) => {
           else{
             
             //res.send(result)
-            res.render("second page",{data: result, link:"raspseti"});
+            res.render("second page",{data: result, link:"raspseti", name: 'Распределительные электрические сети'});
           };
         });
       });
@@ -39,7 +39,7 @@ const router = (app) => {
           else{
             
             //res.send(result)
-            res.render("second page",{data: result, link:"electroenergy"});
+            res.render("second page",{data: result, link:"electroenergy", name: 'Электроэнергетика'});
           };
         });
       });
@@ -51,7 +51,7 @@ const router = (app) => {
           else{
             
             //res.send(result)
-            res.render("second page",{data: result, link:"electroenergyetalon"});
+            res.render("second page",{data: result, link:"electroenergyetalon", name: 'Электроэнергетика и электротехника (Эталон)'});
           };
         });
       });
@@ -63,7 +63,7 @@ const router = (app) => {
           else{
             
             //res.send(result[0].Predmet)
-            res.render("fird page",{data: result[0] ,link: "/erza"});
+            res.render("fird page",{data: result[0] ,link: "/erza",name: 'Эксплуатация релейной защиты, автоматики и электрооборудования электростанций'});
           };
         });
       });
@@ -75,7 +75,7 @@ const router = (app) => {
           else{
             
             //res.send(result)
-            res.render("fird page",{data: result[0], link: "/raspseti"});
+            res.render("fird page",{data: result[0], link: "/raspseti", name: 'Распределительные электрические сети'});
           };
         });
       });
@@ -87,7 +87,7 @@ const router = (app) => {
           else{
             
             //res.send(result)
-            res.render("fird page",{data: result[0], link: "/electroenergy"});
+            res.render("fird page",{data: result[0], link: "/electroenergy", name: 'Электроэнергетика'});
           };
         });
       });
@@ -99,7 +99,7 @@ const router = (app) => {
           else{
             
             //res.send(result)
-            res.render("fird page",{data: result[0], link: "/electroenergyetalon"});
+            res.render("fird page",{data: result[0], link: "/electroenergyetalon", name: 'Электроэнергетика и электротехника (Эталон)'});
           };
         });
       });

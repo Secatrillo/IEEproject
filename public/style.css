@@ -9,6 +9,7 @@ table {
     left: 20%;
     margin: 0;
     font-family: sans-serif;
+    font-size: 18px;
     margin-top: 130px;
     z-index: 2;
   }
@@ -59,9 +60,26 @@ table {
     background:rgb(64, 175, 249);
     top: 0px;
   }
-  .logo,.links{
+  .logo{
+    height: 20px; 
+    position: fixed; 
+    top: 100px; 
+    left: 0px; 
+    border: 1px solid black; 
+    background:rgb(57, 49, 49);
     z-index: 3;
     width: 100%;
+  }
+  div.links{
+    height: 20px; 
+    position: fixed; 
+    top: 100px; 
+    left: 0px;
+    border: 1px solid black;
+    background:rgb(57, 49, 49);
+    z-index: 3;
+    width: 100%;
+
   }
 a.zach {
     background-color: rgb(102, 119, 154);
@@ -74,4 +92,14 @@ a.exam {
 }
 a.exam:hover {
     background-color: rgb(201, 142, 148);
+}
+th{
+    height: 55px;
+    font-size: 30px;
+    color:rgb(221, 9, 9)
+}
+a.links{
+    position: relative;
+    z-index: 4;
+
 }
