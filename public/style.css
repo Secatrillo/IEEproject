@@ -2,10 +2,13 @@ body {
     background-color: #ffffff;
     color: #dddddd;
 }
-body,table {
-    width: 100%;
+
+table {
+    width:100%;
     margin: 0;
     font-family: sans-serif;
+    margin-top: 130px;
+    background: #0f992a; 
   }
   
   ul {
@@ -44,3 +47,8 @@ body,table {
     background: red;
     color: white;
   }
+  #️rectangle {
+    width: 220px;
+    height: 120px;
+    background: #4da1f7;
+}
