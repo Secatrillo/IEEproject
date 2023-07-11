@@ -21,7 +21,7 @@ const router = (app) => {
       });
 
       app.get('/raspseti', (req, res) => {
-        pool.query('SELECT * FROM RASPSETI', (error, result) => {
+        pool.query('SELECT * FROM SETI', (error, result) => {
 
           if (error) res.send(error);
           else{
@@ -33,7 +33,7 @@ const router = (app) => {
       });
 
       app.get('/electroenergy', (req, res) => {
-        pool.query('SELECT * FROM ELECTROENERGY', (error, result) => {
+        pool.query('SELECT * FROM POTOK', (error, result) => {
 
           if (error) res.send(error);
           else{
@@ -45,7 +45,7 @@ const router = (app) => {
       });
 
       app.get('/electroenergyetalon', (req, res) => {
-        pool.query('SELECT * FROM ELECTROENERGYETALON', (error, result) => {
+        pool.query('SELECT * FROM ETALON', (error, result) => {
 
           if (error) res.send(error);
           else{
@@ -63,12 +63,12 @@ const router = (app) => {
           else{
             
             //res.send(result[0].Predmet)
-            res.render("fird page",{data: result[0],link: "/erza"});
+            res.render("fird page",{data: result[0] ,link: "/erza"});
           };
         });
       });
 
-      app.get("/respseti/:link", (req, res) => {
+      app.get("/raspseti/:link", (req, res) => {
         const link = req.params.link;
         pool.query('SELECT * FROM Predmet WHERE link = ?', link,(error, result) => {
           if (error) res.send(error);
@@ -87,7 +87,7 @@ const router = (app) => {
           else{
             
             //res.send(result)
-            res.render("fird page",{data: result[0],link: "/electroenergy"});
+            res.render("fird page",{data: result[0], link: "/electroenergy"});
           };
         });
       });
