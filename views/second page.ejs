@@ -18,8 +18,8 @@
         <% if (data[i].semestr == "1 семестр") { %>
             <% if (data[i].examtype == "Экзамен") { %>
                 <tr align="center">
-                    <td class="exam" >
-                        <a href= <%= "/"+ link + "/" +data[i].link %>>
+                    <td  >
+                        <a class="exam" href= <%= "/"+ link + "/" +data[i].link %>>
                         <%= data[i].name %> 
                         </a>
                     </td>
@@ -30,8 +30,8 @@
         <% if (data[i].semestr == "1 семестр") { %>
            <% if (data[i].examtype != "Экзамен") { %>
                 <tr align="center">
-                    <td class="zach"> 
-                        <a href= <%= "/"+ link + "/" +data[i].link %>>
+                    <td > 
+                        <a class="zach" href= <%= "/"+ link + "/" +data[i].link %>>
                         <%= data[i].name %> 
                         </a> 
                     </td>

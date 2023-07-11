@@ -63,3 +63,15 @@ table {
     z-index: 3;
     width: 100%;
   }
+a.zach {
+    background-color: rgb(102, 119, 154);
+}
+a.zach:hover{
+    background-color: rgb(133, 147, 172);
+}
+a.exam {
+    background-color: rgb(187, 119, 122);
+}
+a.exam:hover {
+    background-color: rgb(201, 142, 148);
+}
