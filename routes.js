@@ -56,7 +56,7 @@ const router = (app) => {
         if (error) res.send(error);
         else{
           //res.send(result[0].Predmet)
-          res.render("page",{data: result[0] ,link: "/erza",name: 'Эксплуатация релейной защиты, автоматики и электрооборудования электростанций'});
+          res.render("fird page",{data: result[0] ,link: "/erza",name: 'Эксплуатация релейной защиты, автоматики и электрооборудования электростанций'});
         };
       });
     });
@@ -67,7 +67,7 @@ const router = (app) => {
         if (error) res.send(error);
         else{
           //res.send(result)
-          res.render("page",{data: result[0], link: "/raspseti", name: 'Распределительные электрические сети'});
+          res.render("fird page",{data: result[0], link: "/raspseti", name: 'Распределительные электрические сети'});
         };
       });
     });
@@ -78,26 +78,23 @@ const router = (app) => {
         if (error) res.send(error);
         else{
           //res.send(result)
-          res.render("page",{data: result[0], link: "/electroenergy", name: 'Электроэнергетика'});
+          res.render("fird page",{data: result[0], link: "/electroenergy", name: 'Электроэнергетика'});
         };
       });
     });
 
-    app.get('/electroenergyetalon/:deb', (req, res) => {
-      const deb = req.params.deb;
-      pool.query('SELECT * FROM Predmet WHERE link = ?', deb,(error, result) => {
+    app.get("/electroenergyetalon/:link", (req, res) => {
+      const link = req.params.link;
+      pool.query('SELECT * FROM Predmet WHERE link = ?', link,(error, result) => {
         if (error) res.send(error);
-        else{ 
-          //res.send(deb)
-          res.render("page",{data: result[0]});
+        else{
+          //res.send(result)
+          res.render("fird page",{data: result[0], link: "/electroenergyetalon", name: 'Электроэнергетика и электротехника (Эталон)'});
         };
       });
     });
-    app.get("/gavno", (req, res) => {
-      
-        res.render("page");
-       
-    });
+
+  
       
 
       
