@@ -1,21 +1,259 @@
 <!DOCTYPE html>
+
 <head>
     <meta charset="UTF-8">
-    <title>Главная страница</title>
-
-    
-
-</head>
-<body">
     <link rel="stylesheet" href="style.css">
-    <h1>2 страница!</h1>
-    <p>Привет! <%= row0.Napravl %> </p>
-    <p>Привет! <%= row1.Napravl %> </p>
-    <p>Привет! <%= row2.Napravl %> </p>
-    <p>Привет! <%= row3.Napravl %> </p>
-    <nav>
-        <a href="/">Главная</a>
-        <a href="/about">О нас</a>
-    </nav>
+    <title>Выбор семестра</title>
+</head>
+
+<body>
+    <img class="fon" src="Kolia.jpg">
+    <div class="logo" style="height: 150px; top: 0px; background:rgb(0, 0, 0)">
+        <img class="img" src="logo.jpg"> </img>
+    </div>
+    <div class="links" style="height: 150px;height: 20px; top: 150px">
+        <nav>
+            <a class='dom' href= "/"> Направления  </a>
+                <p class='dom'> / </p>
+            <a class='dom' href= <%=link%>><%=name%> </a>
+        </nav>
+    </div>
+    <div class="box" ></div> 
+
+    <table> 
+        <th>1 курс 1 семестр</th> 
+        <% for(var i=0; i<data.length; i++){ %>
+            <% if (data[i].semestr == "1 семестр") { %>
+                <% if (data[i].examtype == "Экзамен") { %>
+                    <tr align="center">
+                        <td>
+                            <a style="line-height: 200%"class="exam" href= <%= link + "/" +data[i].link %>>
+                                <%= data[i].name %> 
+                            </a>
+                        </td>
+                    </tr> 
+                <% } %>
+            <% } %>
+        <% } %>
+        <% for(var i=0; i<data.length; i++){ %>
+            <% if (data[i].semestr == "1 семестр") { %>
+            <% if (data[i].examtype != "Экзамен") { %>
+                    <tr align="center">
+                        <td> 
+                            <a style="line-height: 200%"class="zach" href= <%=  link + "/" +data[i].link %>>
+                                <%= data[i].name %> 
+                            </a> 
+                        </td>
+                    </tr> 
+                <% } %>
+            <% } %>
+        <% } %>
+        <tr></tr>
+
+        <th>1 курс 2 семестр</th> 
+        <% for(var i=0; i<data.length; i++){ %>
+            <% if (data[i].semestr == "2 семестр") { %>
+                <% if (data[i].examtype == "Экзамен") { %>
+                    <tr align="center">
+                        <td>
+                            <a style="line-height: 200%"class="exam" href= <%= link + "/" +data[i].link %>>
+                                <%= data[i].name %> 
+                            </a>
+                        </td>
+                    </tr> 
+                <% } %>
+            <% } %>
+        <% } %>
+        <% for(var i=0; i<data.length; i++){ %>
+            <% if (data[i].semestr == "2 семестр") { %>
+            <% if (data[i].examtype != "Экзамен") { %>
+                    <tr align="center">
+                        <td > 
+                            <a style="line-height: 200%"class="zach" href= <%= link + "/" +data[i].link %>>
+                            <%= data[i].name %> 
+                            </a> 
+                        </td>
+                    </tr> 
+                <% } %>
+            <% } %>
+        <% } %>
+        <tr></tr>
+
+        <th>2 курс 3 семестр</th> 
+        <% for(var i=0; i<data.length; i++){ %>
+            <% if (data[i].semestr == "3 семестр") { %>
+                <% if (data[i].examtype == "Экзамен") { %>
+                    <tr align="center">
+                        <td>
+                            <a style="line-height: 200%" class="exam" href= <%=  link + "/" +data[i].link %>>
+                                <%= data[i].name %> 
+                            </a>
+                        </td>
+                    </tr>
+                <% } %>
+            <% } %>
+        <% } %>
+        <% for(var i=0; i<data.length; i++){ %>
+            <% if (data[i].semestr == "3 семестр") { %>
+            <% if (data[i].examtype != "Экзамен") { %>
+                    <tr align="center">
+                        <td> 
+                            <a style="line-height: 200%"class="zach" href= <%=  link + "/" +data[i].link %>>
+                                <%= data[i].name %> 
+                            </a> 
+                        </td>
+                    </tr>
+                <% } %>
+            <% } %>
+        <% } %>
+        <tr></tr>
+
+        <th>2 курс 4 семестр</th> 
+        <% for(var i=0; i<data.length; i++){ %>
+            <% if (data[i].semestr == "4 семестр") { %>
+                <% if (data[i].examtype == "Экзамен") { %>
+                    <tr align="center">
+                        <td>
+                            <a style="line-height: 200%"class="exam" href= <%=  link + "/" +data[i].link %>>
+                                <%= data[i].name %> 
+                            </a>
+                        </td>
+                    </tr>
+                <% } %>
+            <% } %>
+        <% } %>
+        <% for(var i=0; i<data.length; i++){ %>
+            <% if (data[i].semestr == "4 семестр") { %>
+            <% if (data[i].examtype != "Экзамен") { %>
+                    <tr align="center">
+                        <td> 
+                            <a style="line-height: 200%" class="zach" href= <%=  link + "/" +data[i].link %>>
+                                <%= data[i].name %> 
+                            </a> 
+                        </td>
+                    </tr> 
+                <% } %>
+            <% } %>
+        <% } %>
+        <tr></tr>
+
+        <th>3 курс 5 семестр</th> 
+        <% for(var i=0; i<data.length; i++){ %>
+            <% if (data[i].semestr == "5 семестр") { %>
+                <% if (data[i].examtype == "Экзамен") { %>
+                    <tr align="center">
+                        <td>
+                            <a style="line-height: 200%"class="exam" href= <%=  link + "/" +data[i].link %>>
+                                <%= data[i].name %> 
+                            </a>
+                        </td>
+                    </tr>
+                <% } %>
+            <% } %>
+        <% } %>
+        <% for(var i=0; i<data.length; i++){ %>
+            <% if (data[i].semestr == "5 семестр") { %>
+            <% if (data[i].examtype != "Экзамен") { %>
+                    <tr align="center">
+                        <td> 
+                            <a style="line-height: 200%"class="zach" href= <%=  link + "/" +data[i].link %>>
+                                <%= data[i].name %> 
+                            </a>
+                        </td>
+                    </tr>
+                <% } %>
+            <% } %>
+        <% } %>
+        <tr></tr>
+
+        <th>3 курс 6 семестр</th> 
+        <% for(var i=0; i<data.length; i++){ %>
+            <% if (data[i].semestr == "6 семестр") { %>
+                <% if (data[i].examtype == "Экзамен") { %>
+                    <tr align="center">
+                        <td>
+                            <a style="line-height: 200%"class="exam" href= <%=  link + "/" +data[i].link %>>
+                                <%= data[i].name %> 
+                            </a>
+                        </td>
+                    </tr>
+                <% } %>
+            <% } %>
+        <% } %>
+        <% for(var i=0; i<data.length; i++){ %>
+            <% if (data[i].semestr == "6 семестр") { %>
+            <% if (data[i].examtype != "Экзамен") { %>
+                    <tr align="center">
+                        <td > 
+                            <a style="line-height: 200%" class="zach" href= <%=  link + "/" +data[i].link %>>
+                                <%= data[i].name %> 
+                            </a>
+                        </td>
+                    </tr>
+                <% } %>
+            <% } %>
+        <% } %>
+        <tr></tr>
+
+        <th>4 курс 7 семестр</th> 
+        <% for(var i=0; i<data.length; i++){ %>
+            <% if (data[i].semestr == "7 семестр") { %>
+                <% if (data[i].examtype == "Экзамен") { %>
+                    <tr align="center">
+                        <td>
+                            <a style="line-height: 200%" class="exam" href= <%=  link + "/" +data[i].link %>>
+                                <%= data[i].name %> 
+                            </a>
+                        </td>
+                    </tr>
+                <% } %>
+            <% } %>
+        <% } %>
+        <% for(var i=0; i<data.length; i++){ %>
+            <% if (data[i].semestr == "7 семестр") { %>
+            <% if (data[i].examtype != "Экзамен") { %>
+                    <tr align="center">
+                        <td> 
+                            <a style="line-height: 200%" class="zach" href= <%=  link + "/" +data[i].link %>>
+                                <%= data[i].name %> 
+                            </a>
+                        </td>
+                    </tr>
+                <% } %>
+            <% } %>
+        <% } %>
+        <tr></tr>
+
+        <th>4 курс 8 семестр</th> 
+        <% for(var i=0; i<data.length; i++){ %>
+            <% if (data[i].semestr == "8 семестр") { %>
+                <% if (data[i].examtype == "Экзамен") { %>
+                    <tr align="center">
+                        <td  >
+                            <a style="line-height: 200%" class="exam" href= <%=  link + "/" +data[i].link %>>
+                                <%= data[i].name %> 
+                            </a>
+                        </td>
+                    </tr>
+                <% } %>
+            <% } %>
+        <% } %>
+        <% for(var i=0; i<data.length; i++){ %>
+            <% if (data[i].semestr == "8 семестр") { %>
+            <% if (data[i].examtype != "Экзамен") { %>
+                    <tr align="center">
+                        <td> 
+                            <a style="line-height: 200%" class="zach" href= <%=  link + "/" +data[i].link %>>
+                                <%= data[i].name %> 
+                            </a>
+                        </td>
+                    </tr>
+                <% } %>
+            <% } %>
+        <% } %>
+        <tr></tr>
+    </table>
+       
 </body>
+
 </html>

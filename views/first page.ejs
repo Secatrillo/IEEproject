@@ -1,18 +1,37 @@
 <!DOCTYPE html>
+
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <title>Главная страница</title>
-</head>
-<body>
     <link rel="stylesheet" href="style.css">
-    <h1>Добро пожаловать на наш сайт!</h1>
-    <p>Создано с использованием Node.js и Express.</p>
-    <p><%= Object.keys(row1).length %></p>
-    <p><%= row0.Napravl %></p>
-    <nav>
-        <a href="/">Главная</a>
-        <a href="/about">О нас</a>
-    </nav>
+    <title>Выбор направления</title>
+</head>
+
+<body>
+    <img class="fon" src="Kolia.jpg">
+    <div class="logo" style="height: 150px; top: 0px; background:rgb(0, 0, 0)">
+        <img class="img" src="logo.jpg"> </img>
+    </div>
+    <div class="links" style="height: 150px;height: 20px; top: 150px">
+        <nav>
+            <a class='dom' href= "/"> Направления  </a>
+                <p class='dom'> / </p>
+        </nav>
+    </div>
+    <div class="box" ></div> 
+
+    <table >
+        <% for(var i=0; i<data.length; i++){ %>
+            <tr align="center">
+                <td>
+                    <nav>
+                        <a class="nap" href=<%=data[i].link%>><%=data[i].Napravl%></a>
+                    </nav>
+                </td>
+            </tr>
+        <% } %>
+    </table>
+
 </body>
+
 </html>
