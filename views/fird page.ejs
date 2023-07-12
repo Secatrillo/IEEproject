@@ -10,7 +10,7 @@
 <body>
     
     <img class="fon" src="Kolia.jpg">
-    <div class="logo" style="height: 150px; top: 0px; background:red;">
+    <div class="logo" style="height: 150px; top: 0px; background:rgb(0, 0, 0);">
         <img class="img" src="logo.jpg"> </img>
     </div>
     <div class="links" style="height: 150px;height: 20px; top: 150px">
@@ -23,18 +23,25 @@
         </nav>
     </div>
     <div class="box" ></div> 
-    <div>
-        <h1 style="text-align:center"> Дисциплина: <%= data.name %> </h1>  
-        <h2 style="text-align:center"> Задача курса: </h2> 
-        <p class="exeam" style="text-align:center"><%= data.goal %></p>   
-        <h2 style="text-align:center">Необходимые знания студента для освоения дисциплины:</h2>
-        <p  class="exeam" style="text-align:center"><%= data.requarements %></p>
-        <h2 style="text-align:center">Отзывы студентов о дисциплине:</h2>
-        <p class="exeam" style="text-align:center"><%= data.result %></p>
-        <h2 style="text-align:center">Кафедра дисциплины:</h2>
-        <a href="data.cabinet">
-            <p style="text-align:center"> <%= data.cafedra %> </p>
-        </a>
+    <div style="position:  relative; z-index: 2;">
+        <table>
+            <tr>
+                <td>
+                    <h1 class="exam" style="margin: 2px; line-height: 180%"> Дисциплина: <%= data.name %> </h1>  
+                    <h3 class="exam" style="text-align:center;margin: 2px"> Задача курса: </h3> 
+                    <p class="zach" style="margin: 2px; line-height: 150%;"><%= data.goal %></p>   
+                    <h3 class="exam" style="margin: 2px;text-align:center">Необходимые знания студента для освоения дисциплины:</h3>
+                    <p  class="zach"style="margin: 2px;line-height: 150%; line-height: 150%"><%= data.requarements %></p>
+                    <h3 class="exam" style="margin: 2px;text-align:center;">Для чего необходима дисциплина:</h3>
+                    <p  class="zach"style="margin: 2px;line-height: 150%; line-height: 150%"><%= data.result %></p>
+                    <h3 class="exam" style="margin: 2px;text-align:center;">Кафедра дисциплины:</h3>
+                    <a href="data.cabinet">
+                        <p class="zach" style="color:rgb(255, 137, 137);margin: 2px;line-height: 150%;"> <%= data.cafedra %> </p>
+                    </a>
+                </td>
+            </tr>
+        </table>
+       
     </div>   
 </body>
 
