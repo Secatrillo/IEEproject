@@ -28,15 +28,25 @@
             <tr>
                 <td>
                     <h1 class="exam" style="margin: 2px; line-height: 180%"> Дисциплина: <%= data.name %> </h1> 
-                    <h3 class="exam" style="text-align:center;margin: 2px;line-height: 150%"> Задача курса: </h3> 
-                    <p class="zach" style="margin: 2px; line-height: 150%;"><%= data.goal %></p> 
-                    <h3 class="exam" style="margin: 2px;text-align:center; line-height: 150%; "> Предметы, необходимые для освоения данного курса: </h3>
-                    <p  class="zach"style="margin: 2px;line-height: 150%"><%= data.requarements %></p>
-                    <h3 class="exam" style="margin: 2px;text-align:center;line-height: 150%">Для изучения каких дисциплин требуется изучение данного курса:</h3>
-                    <p  class="zach"style="margin: 2px;line-height: 150%;"><%= data.future %></p>
-                    <h3 class="exam" style="margin: 2px;text-align:center;;line-height: 150%">Какие компетенции формируются у обучающихся в ходе освоения курса:</h3>
-                    <p  class="zach"style="margin: 2px;line-height: 150%; "><%= data.result %></p>
-                    <a class="exam" style="color:rgb(255, 255, 255);margin: 2px;line-height: 150%;" href=<%=data.pox %> > Дисциплина реализуется: <%= data.cafedra %> <%=data.cabinet%></a>
+                    <% if (data.goal) { %>
+                        <h3 class="exam" style="text-align:center;margin: 2px;line-height: 150%"> Задача курса: </h3> 
+                        <p class="zach" style="margin: 2px; line-height: 150%;"><%= data.goal %></p>
+                    <% } %>
+                    <% if (data.requarements) { %>
+                        <h3 class="exam" style="margin: 2px;text-align:center; line-height: 150%; "> Предметы, необходимые для освоения данного курса: </h3>
+                        <p  class="zach"style="margin: 2px;line-height: 150%"><%= data.requarements %></p>    
+                    <% } %>
+                    <% if (data.future) { %>
+                        <h3 class="exam" style="margin: 2px;text-align:center;line-height: 150%">Для изучения каких дисциплин требуется изучение данного курса:</h3>
+                        <p  class="zach"style="margin: 2px;line-height: 150%;"><%= data.future %></p>
+                    <% } %>
+                    <% if (data.result) { %>
+                        <h3 class="exam" style="margin: 2px;text-align:center;;line-height: 150%">Какие компетенции формируются у обучающихся в ходе освоения курса:</h3>
+                        <p  class="zach"style="margin: 2px;line-height: 150%; "><%= data.result %></p>
+                    <% } %>
+                    <% if (data.cafedra || data.cabinet) { %>
+                        <a class="exam" style="color:rgb(255, 255, 255);margin: 2px;line-height: 150%;" href=<%=data.pox %> > Дисциплина реализуется: <%= data.cafedra %> <%=data.cabinet%></a>
+                    <% } %>
                 </td>
             </tr>
         </table>
