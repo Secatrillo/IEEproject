@@ -56,7 +56,7 @@ const router = (app) => {
         if (error) res.send(error);
         else{
           //res.send(result[0].Predmet)
-          res.render("fird page",{data: result[0] ,link: "/erza",name: 'Эксплуатация релейной защиты, автоматики и электрооборудования электростанций'});
+          res.render("third page",{data: result[0] ,link: "/erza",name: 'Эксплуатация релейной защиты, автоматики и электрооборудования электростанций'});
         };
       });
     });
@@ -67,7 +67,7 @@ const router = (app) => {
         if (error) res.send(error);
         else{
           //res.send(result)
-          res.render("fird page",{data: result[0], link: "/raspseti", name: 'Распределительные электрические сети'});
+          res.render("third page",{data: result[0], link: "/raspseti", name: 'Распределительные электрические сети'});
         };
       });
     });
@@ -78,7 +78,7 @@ const router = (app) => {
         if (error) res.send(error);
         else{
           //res.send(result)
-          res.render("fird page",{data: result[0], link: "/electroenergy", name: 'Электроэнергетика'});
+          res.render("third page",{data: result[0], link: "/electroenergy", name: 'Электроэнергетика'});
         };
       });
     });
@@ -89,7 +89,7 @@ const router = (app) => {
         if (error) res.send(error);
         else{
           //res.send(result)
-          res.render("fird page",{data: result[0], link: "/electroenergyetalon", name: 'Электроэнергетика и электротехника (Эталон)'});
+          res.render("third page",{data: result[0], link: "/electroenergyetalon", name: 'Электроэнергетика и электротехника (Эталон)'});
         };
       });
     });
